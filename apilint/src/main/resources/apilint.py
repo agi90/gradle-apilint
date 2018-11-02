@@ -161,6 +161,8 @@ class Class():
             self.fullname = raw[raw.index("class")+1]
         elif "interface" in raw:
             self.fullname = raw[raw.index("interface")+1]
+        elif "enum" in raw:
+            self.fullname = raw[raw.index("enum")+1]
         else:
             raise ValueError("Funky class type %s" % (self.raw))
 
